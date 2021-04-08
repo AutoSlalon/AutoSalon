@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F45F0C08-5085-48FC-8948-239CC913CF3B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\car\Car.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Pokup\Customers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\dogovor\Dogovor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\rabotnic\rabotnic.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\postavka\Postavka.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Main\ProjectMain.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Car">
+        <MSBuild Projects="..\car\Car.dproj"/>
+    </Target>
+    <Target Name="Car:Clean">
+        <MSBuild Projects="..\car\Car.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Car:Make">
+        <MSBuild Projects="..\car\Car.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Customers">
+        <MSBuild Projects="..\Pokup\Customers.dproj"/>
+    </Target>
+    <Target Name="Customers:Clean">
+        <MSBuild Projects="..\Pokup\Customers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Customers:Make">
+        <MSBuild Projects="..\Pokup\Customers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Dogovor">
+        <MSBuild Projects="..\dogovor\Dogovor.dproj"/>
+    </Target>
+    <Target Name="Dogovor:Clean">
+        <MSBuild Projects="..\dogovor\Dogovor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Dogovor:Make">
+        <MSBuild Projects="..\dogovor\Dogovor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rabotnic">
+        <MSBuild Projects="..\rabotnic\rabotnic.dproj"/>
+    </Target>
+    <Target Name="rabotnic:Clean">
+        <MSBuild Projects="..\rabotnic\rabotnic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rabotnic:Make">
+        <MSBuild Projects="..\rabotnic\rabotnic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Postavka">
+        <MSBuild Projects="..\postavka\Postavka.dproj"/>
+    </Target>
+    <Target Name="Postavka:Clean">
+        <MSBuild Projects="..\postavka\Postavka.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Postavka:Make">
+        <MSBuild Projects="..\postavka\Postavka.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProjectMain">
+        <MSBuild Projects="..\Main\ProjectMain.dproj"/>
+    </Target>
+    <Target Name="ProjectMain:Clean">
+        <MSBuild Projects="..\Main\ProjectMain.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjectMain:Make">
+        <MSBuild Projects="..\Main\ProjectMain.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Car;Customers;Dogovor;rabotnic;Postavka;ProjectMain"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Car:Clean;Customers:Clean;Dogovor:Clean;rabotnic:Clean;Postavka:Clean;ProjectMain:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Car:Make;Customers:Make;Dogovor:Make;rabotnic:Make;Postavka:Make;ProjectMain:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

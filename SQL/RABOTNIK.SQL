@@ -1,0 +1,16 @@
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Владислав', 'Горь', '89765467891', 8);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Антон', 'Фара', '89675438945', 8);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Петр', 'Лужков', '89548976512', 8);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Василий', 'Солнцев', '89458976012', 4);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Андрей', 'Бабич', '8988518532', 1);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Артем', 'Жигов', '8986458532', 6);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Иван', 'Белов', '8986783132', 10);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Иван', 'Кузов', '8938913132', 9);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Денис', 'Лянцев', '8938750832',7);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Рудин', 'Тихон', '8962270760', 7);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Тимур', 'Мечислав', '8994670983', 7);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Порфирий', 'Ханинов', '8925657692', 5);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Семён', 'Рюмов', '8938187326', 2);
+INSERT INTO RABOTNIC  VALUES (gen_id(gen_rab,1), 'Пимен', 'Журов', '8930896395', 3);
+
+COMMIT WORK;

@@ -1,0 +1,83 @@
+unit Rabotnik;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB,
+  IBX.IBCustomDataSet, IBX.IBQuery, IBX.IBDatabase, IBX.IBTable;
+
+type
+  Trab = class(TForm)
+    GroupBox1: TGroupBox;
+    Button1: TButton;
+    AddButton: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    GroupBox2: TGroupBox;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Edit1: TEdit;
+    NameEdit: TEdit;
+    FamEdit: TEdit;
+    Tel: TEdit;
+    DoljnCB: TComboBox;
+    Adr: TEdit;
+    IBDatabase1: TIBDatabase;
+    Transaction: TIBTransaction;
+    Query: TIBQuery;
+    DolQuery: TIBQuery;
+    DolQueryID_DOLJ: TIntegerField;
+    DolQueryNAMEDOLJ: TIBStringField;
+    procedure AddButtonClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  rab: Trab;
+  id_dol,name_dol: TStringList;
+implementation
+
+{$R *.dfm}
+
+procedure Trab.AddButtonClick(Sender: TObject);
+//кнопка добавления ратника
+begin
+QUery.Active:=False;
+Query.SQL.Clear();
+Query.SQL.Add('insert into rabotnic values (gen_id(gen_rab,1),:NAMERAB,:LASTRAB,:TEL_RAB,:ADR,:COD_DOLZ)');
+Query.ParamByName('NAMERAB').Value:=NameEdit.Text;
+Query.ParamByName('LASTRAB').Value:=FamEdit.Text;
+Query.ParamByName('TEL_RAB').Value:=Tel.Text;
+Query.ParamByName('ADR').Value:=Adr.Text;
+Query.ParamByName('COD_DOLZ').Value:=DoljnCB.text;
+QUery.Active:=true;
+Transaction.Commit();
+end;
+
+procedure Trab.FormCreate(Sender: TObject);
+//заполнение combobox должностями
+begin
+id_dol:=TStringList.Create;
+name_dol:=TStringList.Create;
+   while not DolQuery.eof do
+    begin
+     id_dol.Add(inttostr(DolQueryID_DOLJ.Value));
+     name_dol.Add(DolQueryNAMEDOLJ.Value);
+     DolQuery.next;
+   end;
+   DoljnCB.Items.AddStrings(name_dol);
+end;
+
+end.

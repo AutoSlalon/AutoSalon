@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.356,D:\DelphiProject\Project1.dproj=F:\ОЧКА\Kp18IS\AutoSalon\source\dogovor\Dogovor.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.334,=F:\ОЧКА\Kp18IS\AutoSalon\source\dogovor\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.686,F:\ОЧКА\Kp18IS\AutoSalon\source\dogovor\Unit2.pas=F:\ОЧКА\Kp18IS\AutoSalon\source\dogovor\Dogov.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.686,F:\ОЧКА\Kp18IS\AutoSalon\source\dogovor\Unit2.dfm=F:\ОЧКА\Kp18IS\AutoSalon\source\dogovor\Dogov.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

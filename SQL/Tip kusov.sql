@@ -1,0 +1,14 @@
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Седан');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Купе');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Кабриолет');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Родстер');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Лимузин');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Пикап');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Хетчбек');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Универсал');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Лифтбек');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Внедорожник');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Минивен');
+INSERT INTO TIP_KUSOVA (ID_TIP_KUZOV, NAME_TIP_KUZOV) VALUES (gen_id(gen_tipkuz,1), 'Фургон');
+
+COMMIT WORK;

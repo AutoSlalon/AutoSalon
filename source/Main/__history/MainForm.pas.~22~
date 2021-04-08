@@ -1,0 +1,53 @@
+unit MainForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg;
+
+type
+  TFrmMain = class(TForm)
+    MainMenu1: TMainMenu;
+    Image1: TImage;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    N5: TMenuItem;
+    N6: TMenuItem;
+    N7: TMenuItem;
+    N8: TMenuItem;
+    N9: TMenuItem;
+    N10: TMenuItem;
+    N11: TMenuItem;
+    N12: TMenuItem;
+    N13: TMenuItem;
+    procedure N6Click(Sender: TObject);
+    procedure N5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmMain: TFrmMain;
+
+implementation
+
+{$R *.dfm}
+procedure Auotoriz(AOwner:TComponent); external 'AutoDll.dll';
+procedure ShowReg(AOwner:TComponent); stdcall; external 'RegDll.dll';
+procedure TFrmMain.N5Click(Sender: TObject);
+begin
+ShowReg(self);
+end;
+
+procedure TFrmMain.N6Click(Sender: TObject);
+begin
+Auotoriz(Self);
+end;
+
+end.

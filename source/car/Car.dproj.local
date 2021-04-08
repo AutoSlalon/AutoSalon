@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.637,D:\DelphiProject\Car.dproj=D:\DelphiProject\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.254,F:\ОЧКА\Kp18IS\AutoSalon\source\car\Machine.dfm=D:\DelphiProject\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.420,F:\ОЧКА\Kp18IS\AutoSalon\source\car\Car.dproj=D:\DelphiProject\Car.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.254,F:\ОЧКА\Kp18IS\AutoSalon\source\car\Machine.pas=D:\DelphiProject\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.249,=D:\DelphiProject\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.627,=D:\DelphiProject\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.749,=D:\DelphiProject\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.295,=D:\DelphiProject\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

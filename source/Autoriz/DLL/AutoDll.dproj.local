@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.243,D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Autoriz\DLL\AutoDll.dproj=D:\delphicom\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.888,=D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Autoriz\DLL\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.781,D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Autoriz\AutorizForm.dfm=D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Autoriz\DLL\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.781,D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Autoriz\AutorizForm.pas=D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Autoriz\DLL\Unit1.pas</Transaction>
+    <Transaction>2021.03.27 11:48:52.109,=F:\ОЧКА\Kp18IS\AutoSalon\source\Autoriz\DLL\Unit2.pas</Transaction>
+    <Transaction>2021.03.27 11:49:10.275,F:\ОЧКА\Kp18IS\AutoSalon\source\Autoriz\AutorizForm.pas=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+	</ProjectSortOrder>
+</BorlandProject>

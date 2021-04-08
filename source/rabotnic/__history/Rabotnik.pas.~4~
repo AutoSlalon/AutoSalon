@@ -1,0 +1,64 @@
+unit Rabotnik;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB,
+  IBX.IBCustomDataSet, IBX.IBQuery, IBX.IBDatabase;
+
+type
+  Trab = class(TForm)
+    GroupBox1: TGroupBox;
+    Button1: TButton;
+    AddButton: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    GroupBox2: TGroupBox;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Edit1: TEdit;
+    NameEdit: TEdit;
+    FamEdit: TEdit;
+    Tel: TEdit;
+    DoljnCB: TComboBox;
+    Adr: TEdit;
+    IBDatabase1: TIBDatabase;
+    Transaction: TIBTransaction;
+    Query: TIBQuery;
+    procedure AddButtonClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  rab: Trab;
+
+implementation
+
+{$R *.dfm}
+
+procedure Trab.AddButtonClick(Sender: TObject);
+begin
+QUery.Active:=False;
+Query.SQL.Clear();
+Query.SQL.Add('insert into rabotnic values (gen_id(gen_rab,1),:NAMERAB,:LASTRAB,:TEL_RAB,:ADR,:COD_DOLZ)');
+Query.ParamByName('NAMERAB').Value:=NameEdit.Text;
+Query.ParamByName('LASTRAB').Value:=FamEdit.Text;
+Query.ParamByName('TEL_RAB').Value:=StrToINT(Tel.Text);
+Query.ParamByName('ADR').Value:=Adr.Text;
+Query.ParamByName('COD_DOLZ').Value:=DoljnCB.text;
+QUery.Active:=true;
+Transaction.Commit();
+end;
+
+end.

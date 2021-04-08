@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.371,=G:\ОЧКА\Kp18IS\AutoSalon\source\Main\MainForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.640,D:\delphicom\Unit1.dfm=D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Main\MainForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.042,D:\delphicom\ProjectMain.dproj=D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\ProjectMain.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.640,D:\delphicom\Unit1.pas=D:\Games\ДИСТАНЦИОНКА\КУРСОВОЙ\source\Main\MainForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.601,=D:\delphicom\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.584,D:\delphicom\Project1.dproj=D:\delphicom\ProjectMain.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
